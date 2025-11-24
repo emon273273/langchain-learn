@@ -37,7 +37,7 @@ messages=[
 ]
 
 
-for chunk in llmModel.stream(messages):
+for chunk in llmModel.stream(messages): 
     print(chunk.content,end="")
 
 
