@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv,find_dotenv
 _=load_dotenv(find_dotenv())
 from langchain_groq import ChatGroq
-groq=os.environ['GROQ_API_KEY']
+
 
 
 ##################completation model####################
