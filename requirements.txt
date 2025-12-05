@@ -1,3 +1,16 @@
 langchain
+langchain-core
+
+# Google Gemini (PaLM) Integration
+langchain-google-genai
+google-generativeai
+
+# Hugging Face Integration
+langchain-huggingface
+transformers
+huggingface-hub
+transformers
+
+
 python-dotenv==1.0.1
 langchain-groq
