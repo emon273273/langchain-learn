@@ -6,14 +6,16 @@ from langchain_groq import ChatGroq
 
 from langchain_core.messages import HumanMessage, SystemMessage
 
-
-#make chat model
-
-llm =ChatGroq(model="llama-3.3-70b-versatile",
-              temperature=0.7)
+from langchain_google_genai import ChatGoogleGenerativeAI
 
 
-#define message
+#make chat model using groq
+
+# llm =ChatGroq(model="llama-3.3-70b-versatile",
+#               temperature=0.7)
+
+
+# #define message
 
 message=[
     SystemMessage(content="you are a programmer "),
@@ -21,6 +23,20 @@ message=[
 ]
 
 
+# response=llm.invoke(message)
+
+# print(response.content)
+
+
+#make the chat model using gemini
+
+
+#----------geminin------------------
+
+llm=ChatGoogleGenerativeAI(model="gemini-2.5-flash")
+
 response=llm.invoke(message)
 
 print(response.content)
+
+
